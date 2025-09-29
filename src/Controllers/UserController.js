@@ -4,8 +4,6 @@ const prisma = new PrismaClient();
 
 
 async function registarUsuario(req, res) {
-
-    
     
     const { username, password } = req.body;
 
