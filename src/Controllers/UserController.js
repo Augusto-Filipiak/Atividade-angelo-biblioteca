@@ -11,7 +11,7 @@ async function registarUsuario(req, res) {
         throw new Error("Está faltando informação")
     }
 
-    if(password > 4) {
+    if(password < 4) {
         throw new Error("A senha deve ter no minimo 4 caracteres")
     }
 
