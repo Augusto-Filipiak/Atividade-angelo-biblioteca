@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { pegarTodosLivros, pegarLivroId, criarLivro, deletarUser, pegarEmprestado, devolverLivro, atualizarLivro } from "../Controllers/Controller.js";
-import {token as auth} from "../../../middlewares/auth.js";
-import { verificarAdmin } from "../../../middlewares/adminMiddleware.js";
+import { pegarTodosLivros, pegarLivroId, criarLivro, deletarUser, pegarEmprestado, devolverLivro, atualizarLivro } from "../Controllers/BooksController.js";
+import {token as auth} from "../middlewares/auth.js";
+import { verificarAdmin } from "../middlewares/adminMiddleware.js";
 
 const roteadorBooks = Router();
 
@@ -16,7 +16,7 @@ roteadorBooks.get("/:id",  (req, res) => {
     pegarLivroId(req, res)
 })
 
-roteadorBooks.post("/", verificarAdmin,   (req, res) => {
+roteadorBooks.post("/", verificarAdmin,(req, res) => {
     criarLivro(req, res)
 })
 

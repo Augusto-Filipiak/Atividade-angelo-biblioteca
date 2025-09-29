@@ -1,6 +1,6 @@
 import express from "express";
-import roteadorUser from "./routes/Users/Routers/Router.js";
-import roteadorBooks from "./routes/Books/Routers/Router.js";
+import roteadorUser from "./routes/BooksRouter.js";
+import roteadorBooks from "./routes/UserRouter.js";
 const api = express();
 
 api.use(express.json());
