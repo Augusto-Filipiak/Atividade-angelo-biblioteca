@@ -1,0 +1,29 @@
+{
+  "name": "atividade-angelo-biblioteca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augusto-Filipiak/Atividade-angelo-biblioteca.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Augusto-Filipiak/Atividade-angelo-biblioteca/issues"
+  },
+  "homepage": "https://github.com/Augusto-Filipiak/Atividade-angelo-biblioteca#readme",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.16.2"
+  }
+}
